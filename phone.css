@@ -1,0 +1,131 @@
+/* Body Section */
+
+body{
+    height: auto;
+    width: auto;
+}
+
+/* Navigation Section */
+
+#navbar{
+    flex-direction: column;
+}
+ 
+#navbar ul li a{
+     font-size: 0.85rem;
+     padding: 0px 7px;
+     padding-bottom: 8px;
+}
+
+ /* Home Section */
+ 
+#home{
+    height: 480px;
+    padding: 3px 28px;
+}
+ 
+#home::before{
+     height: 630px;
+}
+
+#home p{
+     font-size: 15px;
+     margin: 0px 5px;
+} 
+
+/* Playlist Section */
+
+#playlist{
+    flex-direction: column;
+}
+
+#playlist .songs{
+    padding: 14px;
+    margin: 5px 0px;
+    margin-bottom: 20px ;
+    height:200px ;
+    width:200px ;
+    margin-left: -30px;
+}
+
+#playlist .songs2{
+    padding: 14px;
+    margin: 2px 0px;
+    margin-bottom: 20px ;
+    height: 200px;
+    width: 200px;
+    margin-left: -30px;
+}
+
+#playlist .songs3{
+    padding: 14px;
+    margin: 2px 0px;
+    margin-left: -30px;
+    margin-bottom: 20px ;
+    height: 200px;
+    width:200px ;
+}
+
+#playlist .pin img{
+    padding: 14px;
+    margin: 2px 0px;
+    margin-bottom: 20px ;
+    height: auto;
+    width: 200px;
+}
+
+/* Albums Section */
+
+#albums .album img{
+    height: 250px;
+    width: 50% ;
+    border: 3px solid rgb(199, 55, 55);
+    border-radius: 30px;
+
+}
+
+/* Artists Section */
+
+#art{
+    flex-direction: column;
+}
+
+/* Footer */
+
+footer p{
+    font-size: 1.0rem;
+}
+
+/* Utility Classes */
+
+.more{
+    margin: 10px 10px;
+    padding: 3px;
+    width: 250px;
+    height: auto;
+}
+
+.more1{
+    margin: 0px;
+    padding: 0px;
+    margin-left: -35px;
+    width: 270px;
+    height: auto;
+}
+
+.h-primary{
+    font-size: 26px;
+}
+
+.h-secondary{
+    font-size: 25px;
+}
+
+.h-ternary{
+    font-size: 20px;
+}
+
+.btn{
+    font-size: 13px;
+    padding: 4px 8px ;
+}

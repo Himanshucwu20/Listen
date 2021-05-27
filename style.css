@@ -1,0 +1,417 @@
+/* Body Section */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(img/bg8.jpg);
+    opacity: 2;
+    
+}    
+
+/* Navigation Section */
+
+#logo{
+    margin: 2px 10px;
+}
+
+#logo img{
+    height: 68px;
+    width: 91px;
+    margin: 9px 28px;
+    
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+
+}
+
+#navbar ul li{
+    color: rgb(44, 43, 43);
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Reggae One', cursive;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px  34px ;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: rgb(207, 202, 202);
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column; 
+    padding: 10px 135px;
+    justify-content: center;
+    align-items: center;
+    height: 396px;
+}
+
+#home::before{
+    content: "";
+    background: url(img/bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 77%;
+    width: 100%; 
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#home h1{
+    color: rgb(48 48 48);
+    text-align: center;
+    font-family: 'Reggae One', cursive;
+
+    } 
+
+#home p{
+    color: rgb(110, 57, 57);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Reggae One', cursive;
+}
+
+/* Playlist Section */
+
+#play{
+    position: relative;
+}
+
+#play h1{
+    color: rgb(44, 43, 43);
+}
+
+#play::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url(img/bg3.jpg) no-repeat center center/cover;
+}
+
+#playlist{
+    display: flex;
+    margin: 72px;
+    flex-direction: row-reverse;
+}
+
+
+#playlist .songs{
+    border: 2px solid rgb(110, 109, 109); 
+    padding: 150px 30px ;
+    margin-top: -20px;
+    margin-bottom: 71px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 24px;
+    background: url(img/bg5.jpg) no-repeat center center/cover;
+}
+
+#playlist .songs2{
+    border: 2px solid rgb(110, 109, 109); 
+    padding: 150px 30px ;
+    margin-top: -20px;
+    margin-bottom: 71px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 24px;
+    background: url(img/bg2.jpg) no-repeat center center/cover;
+}
+
+#playlist .songs3{
+    border: 2px solid rgb(110, 109, 109); 
+    padding: 150px 30px ;
+    margin-top: -20px;
+    margin-bottom: 71px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 24px;
+    background: url(img/bg7.jpg) no-repeat center center/cover;
+}
+
+#playlist .pin img{
+    height: 450px;
+    width: 330px;
+    margin-top: -35px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    margin-left: -100px;
+}
+
+/* Albums Section */
+
+#albums{
+    position: relative;   
+}
+
+#albums h1{
+    color: rgb(53 0 0);
+    margin: 0px ;
+    padding: 0px;
+
+}
+
+#albums::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url(img/bg9.jpg) no-repeat center center/cover;
+}
+
+.album{
+    display: flex;
+    flex-direction: column;
+}
+
+#albums .album img{
+    margin: 30px ;
+    padding: 0px;
+    height: 500px;
+    width: 50% ;
+    border: 4px solid rgb(99, 97, 97);
+    border-radius: 30px;
+
+}
+
+#albums .album img:hover{
+    cursor: pointer;
+    border: 4px solid rgb(233, 233, 233);
+}
+
+/* Artists Section */
+
+#artists{
+    position: relative;
+}
+
+#artists h1{
+    color: rgb(0 0 0);
+}
+
+
+#art{
+    display: flex;
+    margin: 72px;
+    flex-direction: row;
+}
+
+
+#art .artist1{
+    height: 0px;
+    width: 50%;
+    border: 2px solid rgb(110, 109, 109); 
+    padding: 150px 20px ;
+    margin-top: -40px;
+    margin-bottom: 71px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 250px;
+    background: url(img/art1.jpg) no-repeat center center/cover;
+}
+
+#art .artist2{
+    height: 0px;
+    width: 50%;
+    border: 2px solid rgb(110, 109, 109); 
+    padding: 150px 20px ;
+    margin-top: -40px;
+    margin-bottom: 71px;
+    margin-left: 30px;
+    margin-right: 15px;
+    border-radius: 250px;
+    background: url(img/art3.jpg) no-repeat center center/cover;
+}
+
+#art .artist3{
+    height: 0px;
+    width: 50%;
+    border: 2px solid rgb(110, 109, 109); 
+    padding: 150px 20px ;
+    margin-top: -40px;
+    margin-bottom: 71px;
+    margin-left: 30px;
+    margin-right: 15px;
+    border-radius: 250px;
+    background: url(img/art2.jpg) no-repeat center center/cover;
+}
+
+#art .artist4{
+    height: 0px;
+    width: 50%;
+    border: 2px solid rgb(110, 109, 109); 
+    padding: 150px 20px ;
+    margin-top: -40px;
+    margin-bottom: 71px;
+    margin-left: 30px;
+    margin-right: 15px;
+    border-radius: 250px;
+    background: url(img/art4.webp) no-repeat center center/cover;
+}
+
+/* Footer */
+
+footer{
+    background: black;
+    color: white;
+    padding: 20px ;
+
+}
+
+footer img{
+    height: 200px;
+    width: 200px ;
+    margin-left: 30px;
+    margin-bottom: 18px;
+}
+
+footer img:hover{
+    cursor: pointer;
+}
+ 
+footer p{
+    font-size: 1.5rem;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 28px;
+    font-family: 'Reggae One', cursive;
+}
+
+.h-secondary{
+    font-size: 2.2rem;
+    padding: 10px;
+    font-family: 'Reggae One', cursive;
+    text-shadow: 2px 1px  ;
+    color: rgb(255, 253, 253);
+}
+
+.h-secondary:hover{
+    font-size: 2.2rem;
+    font-family: 'Reggae One', cursive;
+    text-shadow: 2px 1px  ;
+    color: rgb(248, 240, 122);
+    cursor: pointer;
+}
+
+.h-ternary{
+    font-size: 1.8rem;
+    padding: 18px;
+    font-family: 'Reggae One', cursive;
+    text-shadow: 2px 1px  ;
+    color: rgb(230, 225, 225);
+}
+
+.h-ternary:hover{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+    
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(207, 140, 140);
+    background-color:rgb(48, 19, 19);
+    color:rgb(202, 145, 145);
+    margin: 17px ;
+    font-size: 1.5rem;
+    font-family: 'Reggae One', cursive;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: rgb(48, 19, 19);
+    background-color:rgb(202, 145, 145) ;
+    border: 2px solid rgb(48, 19, 19);
+}
+
+.more{
+    color: rgb(14, 13, 13);
+    background-color: white;
+    padding: 6px 20px;
+    border: 4px solid rgb(29, 28, 28);
+    margin: 20px ;
+    margin-left: 85px;
+    font-size: 1.5rem;
+    font-family: 'Reggae One', cursive;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.more:hover{
+    border: 4px solid rgb(5, 5, 5);
+    color: rgb(236, 228, 227);
+    background-color: rgb(29, 26, 26);
+}
+
+.more1{
+    color:black ;
+    background-color:white ;
+    padding: 2px 20px;
+    border: 4px solid rgb(29, 27, 27);
+    margin-top: 276px;
+    margin-left: 44px;
+    font-size: 1.5rem;
+    font-family: 'Reggae One', cursive;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 50px;
+    width: 1000px;
+}
+
+.more1:hover{
+    color:white ;
+    background-color:black ;
+    border: 4px solid rgb(102, 102, 102);
+}
+
+.center{
+    text-align: center;
+}
